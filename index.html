@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1267d6">
+  <title>TOP STORE PRO | توب ستور</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="announcement">TOP STORE PRO — اختياراتك التقنية في مكان واحد</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="TOP STORE الرئيسية"><span class="brand-mark">T</span><span>TOP <b>STORE</b><small>PRO • SMART SHOPPING</small></span></a>
+    <label class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="بتدور على إيه؟" aria-label="ابحث عن منتج"></label>
+    <div class="header-actions"><button class="icon-btn" id="themeToggle" aria-label="تغيير المظهر">☾</button><button class="cart-btn" id="openCart">السلة <span id="cartCount">0</span></button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><span class="eyebrow">TECH • STYLE • EVERYDAY</span><h1>كل اللي يكمّل<br><em>تجربتك التقنية.</em></h1><p>اكتشف إكسسوارات الموبايل ومنتجاتك المفضلة، واختار اللي يناسبك بسهولة.</p><div class="hero-actions"><a class="primary-btn" href="#products">تسوّق المنتجات <span>←</span></a><span class="trust-note">✓ تجربة تسوّق سهلة وآمنة</span></div></div>
+      <div class="hero-art"><div class="art-glow"></div><div class="floating-card card-top"><span>NEW DROP</span><b>اختيارات<br>مميزة</b><small>TOP STORE</small></div><div class="phone-art"><div class="phone-camera"></div><div class="phone-screen"><span>TOP</span><b>STORE</b><i>PRO</i></div></div><div class="floating-card card-bottom"><span class="mini-dot"></span> منتجات مختارة بعناية</div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+    </section>
+    <section class="benefits"><div><span class="benefit-icon">◇</span><span><b>اختيارات متنوعة</b><small>منتجات في أقسام مختلفة</small></span></div><div><span class="benefit-icon">↗</span><span><b>طلب سهل</b><small>اجمع طلبك في السلة</small></span></div><div><span class="benefit-icon">◎</span><span><b>تحديث مباشر</b><small>المنتجات الجديدة تظهر تلقائيًا</small></span></div></section>
+    <section class="products-section" id="products">
+      <div class="section-heading"><div><span class="eyebrow">SHOP OUR COLLECTION</span><h2>اكتشف المنتجات</h2><p>اختار منتجك المفضل وضيفه للسلة.</p></div><div class="filters"><select id="categoryFilter" aria-label="تصفية حسب القسم"><option value="all">كل الأقسام</option></select><select id="sortFilter" aria-label="ترتيب المنتجات"><option value="featured">ترتيب مقترح</option><option value="price-asc">السعر: الأقل أولًا</option><option value="price-desc">السعر: الأعلى أولًا</option><option value="newest">الأحدث أولًا</option></select></div></div>
+      <div id="connectionStatus" class="status-line"><span class="status-dot"></span> جاري تحميل المنتجات...</div>
+      <div id="productGrid" class="product-grid"><div class="loading-card"></div><div class="loading-card"></div><div class="loading-card"></div><div class="loading-card"></div></div>
+      <div id="emptyState" class="empty-state hidden"><div>⌕</div><h3>مفيش منتجات هنا حاليًا</h3><p>جرّب تغيّر البحث أو القسم، أو ارجع تاني قريب.</p><button class="secondary-btn" id="clearFilters">عرض كل المنتجات</button></div>
+    </section>
+    <section class="newsletter"><div><span class="eyebrow">TOP STORE COMMUNITY</span><h2>خليك قريب من كل جديد.</h2><p>تابع المنتجات والعروض الجديدة أول ما تنزل.</p></div><a class="primary-btn" href="#products">اكتشف المتجر <span>←</span></a></section>
+  </main>
+  <footer class="footer"><a class="brand brand-small" href="#"><span class="brand-mark">T</span><span>TOP <b>STORE</b><small>PRO • SMART SHOPPING</small></span></a><span>© <span id="year"></span> TOP STORE PRO. جميع الحقوق محفوظة.</span><a href="admin.html" class="admin-link">إدارة المتجر</a></footer>
+  <div id="cartOverlay" class="overlay hidden"></div>
+  <aside id="cartDrawer" class="cart-drawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow">YOUR BAG</span><h2>سلة المشتريات <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-btn" aria-label="إغلاق">×</button></div><div id="cartItems" class="cart-items"></div><div id="cartEmpty" class="cart-empty"><span>🛍</span><b>سلتك لسه فاضية</b><small>ضيف منتجات تعجبك وهنجمعهالك هنا.</small></div><div class="cart-summary"><div><span>الإجمالي</span><b id="cartTotal">0 ج.م</b></div><small>تكلفة التوصيل يتم تأكيدها عند التواصل معك.</small><button id="checkoutBtn" class="primary-btn full-btn" disabled>تأكيد الطلب <span>←</span></button></div></aside>
+  <div id="checkoutModal" class="modal-wrap hidden"><form id="checkoutForm" class="modal-card"><button type="button" class="close-btn modal-close" id="closeCheckout" aria-label="إغلاق">×</button><span class="eyebrow">ALMOST THERE</span><h2>بيانات توصيل الطلب</h2><p>اكتب بياناتك عشان نقدر نتواصل معاك لتأكيد الطلب.</p><label>الاسم بالكامل<input name="customerName" required minlength="2" maxlength="80" autocomplete="name" placeholder="اسمك"></label><label>رقم الموبايل<input name="phone" required inputmode="tel" minlength="8" maxlength="20" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label>العنوان بالتفصيل<textarea name="address" required minlength="5" maxlength="300" rows="3" placeholder="المدينة، المنطقة، الشارع، علامة مميزة"></textarea></label><label>ملاحظات (اختياري)<textarea name="notes" maxlength="300" rows="2" placeholder="اللون أو أي تفاصيل إضافية"></textarea></label><div class="checkout-total"><span>إجمالي المنتجات</span><b id="checkoutTotal">0 ج.م</b></div><button class="primary-btn full-btn" id="submitOrder" type="submit">إرسال الطلب <span>←</span></button><p class="form-message" id="checkoutMessage" role="status"></p></form></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="assets/store.js"></script>
+</body>
+</html>
